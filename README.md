@@ -35,5 +35,30 @@ Whether you're creating glowing buttons, floating text, or rainbow-tweens, **Scr
 [colorShift(0-255)]
 [float(20)]
 <loop>}
-
 <end>
+```
+
+## 📜 Syntax Overview
+
+| Element   | Format |
+|-----------|--------|
+| **Text**      | `{text="Hello"; [type="heading=1"]}` |
+| **Button**    | `{button="Click me!"; [colour="red"]}` |
+| **Variable**  | `{var="score"; [key="$score$"]}` |
+| **Tween**     | `{tween=""; [scale(2)] [glow(5)] [fade(in)]}` |
+| **Loop**      | `<loop>` *(repeats tween forever)* |
+
+## 🎨 Supported Tweens
+
+- `[scale(n)]` → Grows/shrinks the element  
+- `[glow(n)]` → Adds glowing effect with `n` intensity  
+- `[pos(x-y)]` → Moves element from `x` to `y` position  
+- `[rotate(deg)]` → Rotates the element by degrees  
+- `[fade(in/out)]` → Fades the element in or out  
+- `[float(px)]` → Element floats up/down in a loop  
+- `[delay(ms)]` → Delays the start of the animation in milliseconds  
+- `[colorShift(min-max)]` → Shifts color between RGB values from `min` to `max`  
+  *(Max is 255 — RGB standard!)*  
+- `<loop>` → Used after tween to repeat animation forever
+
+
